@@ -13,7 +13,7 @@ html {
   height: 100%;
 }
 html * {
-  box-sizing: border-box;
+  /*! box-sizing: content-box; */
 }
 body {
   color: #ffffff;
@@ -243,7 +243,7 @@ body .loader_page .home_page .content .classification_expand {
 }
 body .loader_page .home_page .content .classification {
   position: relative;
-  max-width: 90%;
+  max-width: 100%;
   max-height: 2vw;
   overflow: hidden;
   display: flex;
@@ -352,14 +352,14 @@ body .loader_page .home_page .content .model_display .model_list .model_item .im
   object-fit: cover;
 }
 body .loader_page .home_page .content .model_display .model_list .model_item .model_des {
-  height: var(--height);
-  width: 100%;
+  height: 40px;
+  /*! width: 100%; */
   transition: 0.3s;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   background: #262626;
-  padding: 0 0.5vw;
+  padding: 0 0.2vw;
+  /*! padding-top: 0.1vw; */
 }
 body .loader_page .home_page .content .model_display .model_list .model_item .model_des .level {
   width: 1.56vw;
@@ -379,10 +379,12 @@ body .loader_page .home_page .content .model_display .model_list .model_item .mo
   overflow: hidden;
 }
 body .loader_page .home_page .content .model_display .model_list .model_item .model_des .text_des p {
-  width: 100%;
-  overflow: hidden;
+  /*! width: 100%; */
+  /*! overflow: hidden; */
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: ;
+  word-wrap: break-word;
+  height: 29px;
 }
 body .loader_page .home_page .content .model_display .model_list .model_item .model_des .text_des p:nth-of-type(1) {
   font-size: 1rem;
@@ -413,7 +415,7 @@ body .loader_page .home_page .content .model_display .model_list::-webkit-scroll
 body .loader_page .home_page .content .model_display .model_detail {
   width: 17vw;
   flex-shrink: 0;
-  height: 100%;
+  height: 95%;
   border: 1px solid #3d3d3d;
   background: #262626;
   border-radius: 0.5vw;
@@ -425,7 +427,7 @@ body .loader_page .home_page .content .model_display .model_detail {
 body .loader_page .home_page .content .model_display .model_detail .img_container {
   position: relative;
   width: 100%;
-  height: 8.7vw;
+  height: 17vw;
   border-radius: 0.5vw;
   overflow: hidden;
 }
@@ -577,7 +579,7 @@ body .loader_page .home_page .content .model_display .model_detail .basic_inf {
 body .loader_page .home_page .content .model_display .model_detail .basic_inf .model_inf {
   display: grid;
   grid-gap: 0.5vw;
-  width: 100%;
+  /*! width: 100%; */
   padding: 0 0.8vw;
 }
 body .loader_page .home_page .content .model_display .model_detail .basic_inf .model_inf .inf_item {
